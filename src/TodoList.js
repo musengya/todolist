@@ -1,4 +1,5 @@
 import React from "react";
+import TodoItems from "./TodoItems";
 
 class TodoList extends React.Component {
     render() {
@@ -8,7 +9,8 @@ class TodoList extends React.Component {
                     <form onSubmit={this.addItem}>
                         <input ref={(a) => this._inputElement = a} placeholder="input task" />
                         <button type="submit">Add Task</button>
-</form>
+                    </form>
+                    <TodoItems />
                 </div>
 
             </div>
