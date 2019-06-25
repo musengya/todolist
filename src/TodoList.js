@@ -6,7 +6,7 @@ class TodoList extends React.Component {
             <div className="todoListMain">
                 <div className="header">
                     <form onSubmit={this.addItem}>
-                        <input type="text" placeholder="input task" />
+                        <input ref={(a) => this._inputElement = a} placeholder="input task" />
                         <button type="submit">Add Task</button>
 </form>
                 </div>
