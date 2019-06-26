@@ -7,7 +7,7 @@ export default class TodoList extends React.Component {
         super(props);
         this.state = {
             text: "",
-            items: ["eggs", "beans", "Bread"]
+            items: []
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
