@@ -18,15 +18,13 @@ export default class DisplayTodoItem extends React.Component {
         var item = this.props.item;
         return (
             <li>
-            <input
-                checked={this.state.done}
-                onChange={this.handleChange}
-                type="checkbox" />
-            {item}
-            <button onClick={this.props.handleDelete.bind(null, item)}>
-                x
-                </button>
-        </li>
+                <input
+                    checked={this.state.done}
+                    onChange={this.handleChange}
+                    type="checkbox" />
+                <span className="item-text">{item}</span>
+                <button onClick={this.props.handleDelete.bind(null, item)}>X</button>
+            </li>
         )
     }
 }

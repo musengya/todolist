@@ -14,7 +14,7 @@ export default class TodoItems extends React.Component {
                         item={item} />
                 })
                 }
-              
+
             </ul>
         )
     }
